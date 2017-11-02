@@ -1,5 +1,7 @@
 <html>
   <head>
+    <meta charset='utf-8' />
+    <title>Adventures of Coconut Kiddo & Flutterby</title>
     <script src='https://api.mapbox.com/mapbox-gl-js/v0.40.0/mapbox-gl.js'></script>
     <link href='https://api.mapbox.com/mapbox-gl-js/v0.40.0/mapbox-gl.css' rel='stylesheet' />
   </head>
@@ -11,7 +13,13 @@
     var map = new mapboxgl.Map({
       container: 'map',
       style: 'mapbox://styles/mapbox/light-v9'
+      center: [-74.50, 40], // starting position
+      zoom: 9 // starting zoom
       });
+      
+      // Add zoom and rotation controls to the map. 
+  map.addControl(new mapboxgl.NavigationControl());
+      
     </script>
   </body>
 </html>
