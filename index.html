@@ -1,0 +1,17 @@
+<html>
+  <head>
+    <script src='https://api.mapbox.com/mapbox-gl-js/v0.40.0/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v0.40.0/mapbox-gl.css' rel='stylesheet' />
+  </head>
+  <body>
+    <h1>Adventures of FlutterBy and Coconut Kiddo</h1>
+    <div id='map' style='width: 400px; height: 300px;'></div>
+    <script>
+    mapboxgl.accessToken = 'pk.eyJ1IjoiYWtzaGFuaXNoIiwiYSI6ImNqOG84d2plaTAwdzIzMXBjYzNrOWw3ZnYifQ.bCVBZyVCGFayAp-9fUVhtg';
+    var map = new mapboxgl.Map({
+      container: 'map',
+      style: 'mapbox://styles/mapbox/light-v9'
+      });
+    </script>
+  </body>
+</html>
